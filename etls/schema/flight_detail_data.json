@@ -1,0 +1,965 @@
+{
+  "type": "struct",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "aircraft_age",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "aircraft_code",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "aircraft_country_id",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "aircraft_history",
+      "type": {
+        "type": "array",
+        "elementType": {
+          "type": "struct",
+          "fields": [
+            {
+              "name": "identification",
+              "type": {
+                "type": "struct",
+                "fields": [
+                  {
+                    "name": "number",
+                    "type": {
+                      "type" : "struct", 
+                      "fields" : [
+                        {
+                          "name":"default", 
+                          "type":"string", 
+                          "nullable": true, 
+                          "metadata": {}
+                        }
+                      ]
+                    },
+                    "nullable": true, 
+                    "metadata": {}
+                  },
+                  {
+                    "name": "id",
+                    "type": "string",
+                    "nullable": true,
+                    "metadata": {}
+                  }
+                ]
+              },
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "time",
+              "type": {
+                "type": "struct",
+                "fields": [
+                  {
+                    "name": "real",
+                    "type": {
+                      "type" : "struct",
+                      "fields" : [
+                        {
+                          "name": "departure",
+                          "type": "string",
+                          "nullable": true,
+                          "metadata": {}
+                        }
+                      ]
+                    },
+                    "nullable": true,
+                    "metadata": {}
+                  }
+                ]
+              },
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "airport",
+              "type": {
+                "type": "struct",
+                "fields": [
+                  {
+                    "name": "destination",
+                    "type": {
+                      "type": "struct",
+                      "fields": [
+                        {
+                          "name": "website",
+                          "type": "string",
+                          "nullable": true,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "visible",
+                          "type": "string",
+                          "nullable": true,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "code",
+                          "type": {
+                            "type": "struct",
+                            "fields": [
+                              {
+                                "name": "iata",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "icao",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              }
+                            ]
+                          },
+                          "nullable": true,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "timezone",
+                          "type": {
+                            "type": "struct",
+                            "fields": [
+                              {
+                                "name": "offset",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "offsetHours",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "isDst",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "abbrName",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "name",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "abbr",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              }
+                            ]
+                          },
+                          "nullable": true,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "name",
+                          "type": "string",
+                          "nullable": true,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "position",
+                          "type": {
+                            "type": "struct",
+                            "fields": [
+                              {
+                                "name": "country",
+                                "type": {
+                                  "type": "struct",
+                                  "fields": [
+                                    {
+                                      "name": "name",
+                                      "type": "string",
+                                      "nullable": true,
+                                      "metadata": {}
+                                    },
+                                    {
+                                      "name": "codeLong",
+                                      "type": "string",
+                                      "nullable": true,
+                                      "metadata": {}
+                                    },
+                                    {
+                                      "name": "code",
+                                      "type": "string",
+                                      "nullable": true,
+                                      "metadata": {}
+                                    },
+                                    {
+                                      "name": "id",
+                                      "type": "string",
+                                      "nullable": true,
+                                      "metadata": {}
+                                    }
+                                  ]
+                                },
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "altitude",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "region",
+                                "type": {
+                                  "type": "struct",
+                                  "fields": [
+                                    {
+                                      "name": "city",
+                                      "type": "string",
+                                      "nullable": true,
+                                      "metadata": {}
+                                    }
+                                  ]
+                                },
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "latitude",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "longitude",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              }
+                            ]
+                          },
+                          "nullable": true,
+                          "metadata": {}
+                        }
+                      ]
+                    },
+                    "nullable": true,
+                    "metadata": {}
+                  },
+                  {
+                    "name": "origin",
+                    "type": {
+                      "type": "struct",
+                      "fields": [
+                        {
+                          "name": "website",
+                          "type": "string",
+                          "nullable": true,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "visible",
+                          "type": "string",
+                          "nullable": true,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "code",
+                          "type": {
+                            "type": "struct",
+                            "fields": [
+                              {
+                                "name": "iata",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "icao",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              }
+                            ]
+                          },
+                          "nullable": true,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "timezone",
+                          "type": {
+                            "type": "struct",
+                            "fields": [
+                              {
+                                "name": "offset",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "offsetHours",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "isDst",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "abbrName",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "name",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "abbr",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              }
+                            ]
+                          },
+                          "nullable": true,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "name",
+                          "type": "string",
+                          "nullable": true,
+                          "metadata": {}
+                        },
+                        {
+                          "name": "position",
+                          "type": {
+                            "type": "struct",
+                            "fields": [
+                              {
+                                "name": "country",
+                                "type": {
+                                  "type": "struct",
+                                  "fields": [
+                                    {
+                                      "name": "name",
+                                      "type": "string",
+                                      "nullable": true,
+                                      "metadata": {}
+                                    },
+                                    {
+                                      "name": "codeLong",
+                                      "type": "string",
+                                      "nullable": true,
+                                      "metadata": {}
+                                    },
+                                    {
+                                      "name": "code",
+                                      "type": "string",
+                                      "nullable": true,
+                                      "metadata": {}
+                                    },
+                                    {
+                                      "name": "id",
+                                      "type": "string",
+                                      "nullable": true,
+                                      "metadata": {}
+                                    }
+                                  ]
+                                },
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "altitude",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "region",
+                                "type": {
+                                  "type": "struct",
+                                  "fields": [
+                                    {
+                                      "name": "city",
+                                      "type": "string",
+                                      "nullable": true,
+                                      "metadata": {}
+                                    }
+                                  ]
+                                },
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "latitude",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              },
+                              {
+                                "name": "longitude",
+                                "type": "string",
+                                "nullable": true,
+                                "metadata": {}
+                              }
+                            ]
+                          },
+                          "nullable": true,
+                          "metadata": {}
+                        }
+                      ]
+                    },
+                    "nullable": true,
+                    "metadata": {}
+                  }
+                ]
+              },
+              "nullable": true,
+              "metadata": {}
+            }
+          ]
+        },
+        "containsNull": true
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "aircraft_model",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "airline_iata",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "airline_icao",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "airline_name",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "airline_short_name",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "callsign",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_altitude",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_baggage",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_country_code",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_country_name",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_gate",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_iata",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_icao",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_latitude",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_longitude",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_name",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_terminal",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_timezone_abbr",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_timezone_abbr_name",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_timezone_name",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_timezone_offset",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_timezone_offset_hours",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_visible",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "origin_airport_website",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_altitude",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_baggage",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_country_code",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_country_name",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_gate",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_iata",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_icao",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_latitude",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_longitude",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_name",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_terminal",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_timezone_abbr",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_timezone_abbr_name",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_timezone_name",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_timezone_offset",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_timezone_offset_hours",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_visible",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "destination_airport_website",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "ground_speed",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "heading",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "icao_24bit",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "number",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "on_ground",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "registration",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "squawk",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "status_icon",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "status_text",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "time",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "time_details",
+      "type": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "estimated",
+            "type": {
+              "type": "struct",
+              "fields": [
+                {
+                  "name": "arrival",
+                  "type": "string",
+                  "nullable": true, 
+                  "metadata": {}
+                },
+                {
+                  "name": "departure",
+                  "type": "string",
+                  "nullable": true, 
+                  "metadata": {}
+                }
+              ]
+            },
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "historical",
+            "type": {
+              "type" : "struct",
+              "fields": [
+                {
+                  "name": "flighttime",
+                  "type": "string",
+                  "nullable": true, 
+                  "metadata": {}
+                },
+                {
+                  "name": "delay",
+                  "type": "string",
+                  "nullable": true, 
+                  "metadata": {}
+                }
+              ]
+            },
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "other",
+            "type": {
+              "type" : "struct",
+              "fields": [
+                {
+                  "name": "updated",
+                  "type": "string",
+                  "nullable": true, 
+                  "metadata": {}
+                },
+                {
+                  "name": "eta",
+                  "type": "string",
+                  "nullable": true, 
+                  "metadata": {}
+                }
+              ]
+            },
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "real",
+            "type": {
+              "type" : "struct",
+              "fields": [
+                {
+                  "name": "arrival",
+                  "type": "string",
+                  "nullable": true, 
+                  "metadata": {}
+                },
+                {
+                  "name": "departure",
+                  "type": "string",
+                  "nullable": true, 
+                  "metadata": {}
+                }
+              ]
+            },
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "scheduled",
+            "type": {
+              "type" : "struct",
+              "fields": [
+                {
+                  "name": "arrival",
+                  "type": "string",
+                  "nullable": true, 
+                  "metadata": {}
+                },
+                {
+                  "name": "departure",
+                  "type": "string",
+                  "nullable": true, 
+                  "metadata": {}
+                }
+              ]
+            },
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "trail",
+      "type": {
+        "type": "array",
+        "elementType": {
+          "type": "struct",
+          "fields": [
+            {
+              "name": "lng",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "spd",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "alt",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "hd",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "lat",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "ts",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            }
+          ]
+        },
+        "containsNull": true
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "altitude",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "latitude",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "longitude",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "vertical_speed",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    }
+  ]
+}

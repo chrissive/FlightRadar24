@@ -1,0 +1,9 @@
+{
+  "type": "struct",
+  "name": "AirlineData",
+  "fields": [
+    {"name": "Code", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "ICAO", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "Name", "type": "string", "nullable": true, "metadata": {}},
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "struct",
+  "name": "AirportData",
+  "fields": [
+    {"name": "altitude", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "country", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "iata", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "icao", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "latitude", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "longitude", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "name", "type": "string", "nullable": true, "metadata": {}},
+  ]
+}

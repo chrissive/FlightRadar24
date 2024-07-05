@@ -1,0 +1,25 @@
+{
+  "type": "struct",
+  "name": "FlightData",
+  "fields": [
+    {"name": "aircraft_code", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "airline_iata", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "airline_icao", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "altitude", "type": "integer", "nullable": true, "metadata": {}},
+    {"name": "callsign", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "destination_airport_iata", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "ground_speed", "type": "integer", "nullable": true, "metadata": {}},
+    {"name": "heading", "type": "integer", "nullable": true, "metadata": {}},
+    {"name": "icao_24bit", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "id", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "latitude", "type": "double", "nullable": true, "metadata": {}},
+    {"name": "longitude", "type": "double", "nullable": true, "metadata": {}},
+    {"name": "number", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "on_ground", "type": "integer", "nullable": true, "metadata": {}},
+    {"name": "origin_airport_iata", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "registration", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "squawk", "type": "string", "nullable": true, "metadata": {}},
+    {"name": "time", "type": "integer", "nullable": true, "metadata": {}},
+    {"name": "vertical_speed", "type": "integer", "nullable": true, "metadata": {}},
+  ]
+}
