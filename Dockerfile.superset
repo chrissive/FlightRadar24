@@ -1,0 +1,15 @@
+FROM apache/superset:latest
+
+# Définir une variable d'environnement pour la clé secrète
+ENV SUPERSET_SECRET_KEY='your_secret_key'
+
+USER root
+# Copier le script d'initialisation dans l'image Docker
+COPY script/entrypoint.sh /entrypoint.sh
+
+# Rendre le script exécutable
+RUN chmod +x /entrypoint.sh
+
+
+# Définir le point d'entrée
+ENTRYPOINT ["/entrypoint.sh"]
