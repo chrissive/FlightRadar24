@@ -3,4 +3,6 @@ venv
 logs
 __pycache__
 env
+myenv
+
 superset
