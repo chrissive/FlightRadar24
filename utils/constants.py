@@ -4,7 +4,7 @@ import os
 parser = configparser.ConfigParser()
 parser.read(os.path.join(os.path.dirname(__file__), '../config/config.conf'))
 
-HOST = "192.168.1.58" # "192.168.1.58" # "192.168.1.21" #"192.168.0.40"
+HOST = "0.0.0.0" 
 FLIGHT_EXTRACTION_PATH = parser.get('file_paths', 'flight_extraction_path')
 FLIGHT_DETAIL_EXTRACTION_PATH = parser.get('file_paths', 'flight_detail_extraction_path')
 FLIGHT_HISTORY_EXTRACTION_PATH = parser.get('file_paths', 'flight_history_extraction_path')
